@@ -23,6 +23,7 @@ public class BookingController {
 
     @RequestMapping(path = "/tickets", method = RequestMethod.GET)
     public List<Ticket> getTicket(@RequestBody Ticket ticket) {
+        System.out.println("controller called");
         ticketList.add(ticket);
         return ticketList;
     }
